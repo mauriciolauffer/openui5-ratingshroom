@@ -1,0 +1,31 @@
+{
+  "sap.app": {
+    "id": "openui5.ratingshroom",
+    "type": "library",
+    "applicationVersion": {
+      "version": "${version}"
+    },
+    "title": "An OpenUI5 Control created for SAP Inside Track Sydney 1811."
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.30.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    }
+  }
+}

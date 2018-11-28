@@ -1,0 +1,15 @@
+<mvc:View controllerName="mlauffer.demo.openui5.ratingshroom.controller.App" displayBlock="true"
+          xmlns:mvc="sap.ui.core.mvc" xmlns:shroom="openui5.ratingshroom" xmlns="sap.m">
+    <Shell>
+        <App>
+            <Page id="page" title="{i18n>TITLE}">
+                <VBox class="sapUiMediumMargin">
+                    <Label text="{i18n>red}" />
+                    <shroom:Red iconSize="2rem" />
+                    <Label text="{i18n>green}" />
+                    <shroom:Green iconSize="2rem" />
+                </VBox>
+            </Page>
+        </App>
+    </Shell>
+</mvc:View>

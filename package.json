@@ -1,0 +1,48 @@
+{
+  "name": "openui5-ratingshroom",
+  "version": "0.0.1",
+  "description": "An OpenUI5 Control created for SAP Inside Track Sydney 1811",
+  "homepage": "https://github.com/mauriciolauffer/openui5-ratingshroom#readme",
+  "author": "Mauricio Lauffer",
+  "license": "MIT",
+  "keywords": [
+    "openui5",
+    "sapui5",
+    "ui5",
+    "ui5lab",
+    "rating",
+    "supermariobros",
+    "mariobros",
+    "mushroom"
+  ],
+  "main": "dist/openui5/ratingshroom/library-preload.js",
+  "dependencies": {
+    "@openui5/sap.m": "^1.60.1",
+    "@openui5/sap.ui.core": "^1.60.1",
+    "@openui5/themelib_sap_belize": "^1.60.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "karma": "^3.1.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.2",
+    "karma-openui5": "^0.2.3",
+    "karma-qunit": "^2.1.0",
+    "qunit": "^2.8.0"
+  },
+  "scripts": {
+    "start": "ui5 serve",
+    "build": "ui5 build",
+    "test": "karma start",
+    "preversion": "npm test",
+    "version": "npm run build && git add -A dist",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mauriciolauffer/openui5-ratingshroom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mauriciolauffer/openui5-ratingshroom/issues"
+  }
+}
