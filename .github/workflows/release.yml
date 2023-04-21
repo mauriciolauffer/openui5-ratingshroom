@@ -13,6 +13,7 @@ jobs:
     steps:
       - uses: GoogleCloudPlatform/release-please-action@v3
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           release-type: node
           package-name: openui5-ratingshroom
       - uses: actions/checkout@v3
