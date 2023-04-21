@@ -16,11 +16,6 @@
     "mushroom"
   ],
   "main": "dist/openui5/ratingshroom/library-preload.js",
-  "dependencies": {
-    "@openui5/sap.m": "^1.60.1",
-    "@openui5/sap.ui.core": "^1.60.1",
-    "@openui5/themelib_sap_belize": "^1.60.1"
-  },
   "devDependencies": {
     "eslint": "^5.9.0",
     "karma": "^3.1.1",
