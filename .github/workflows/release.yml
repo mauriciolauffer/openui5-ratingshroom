@@ -13,10 +13,14 @@ jobs:
     steps:
       - uses: GoogleCloudPlatform/release-please-action@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PAT }}
           release-type: node
           package-name: openui5-ratingshroom
       - uses: actions/checkout@v3
+      - run: echo ${{ steps.release.outputs.release_created }}
+      - run: echo ${{ steps.release.outputs }}
+      - run: echo ${{ steps.release }}
+      - run: echo ${{ steps }}
       - uses: actions/setup-node@v3
         with:
           node-version: 20
