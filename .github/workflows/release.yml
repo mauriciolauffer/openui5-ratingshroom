@@ -17,19 +17,11 @@ jobs:
           release-type: node
           package-name: openui5-ratingshroom
       - uses: actions/checkout@v3
-      - run: echo ${{ steps.release.outputs.release_created }}
-      - run: echo ${{ steps.release.outputs }}
-      - run: echo ${{ steps.release }}
-      - run: echo ${{ steps }}
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: https://registry.npmjs.org/
           cache: npm
-        if: ${{ steps.release.outputs.release_created }}
-      - run: npm ci
-        if: ${{ steps.release.outputs.release_created }}
-      - run: npm audit
+      - run: npm publish --tag=beta
         env:
-          NODE_AUTH_TOKEN: 123
-        if: ${{ steps.release.outputs.release_created }}
+          NPM_TOKEN: ${{ secrets.NPM_SECRET }}
