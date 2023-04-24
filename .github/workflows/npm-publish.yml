@@ -1,8 +1,10 @@
-name: NPM Package
+name: NPM Package Publish
 
 on:
   release:
     types: [created]
+
+permissions: read-all
 
 jobs:
   publish:
@@ -13,7 +15,7 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm audit
+          cache: npm
+      - run: npm publish
         env:
-          NPM_TOKEN: 123
+          NPM_TOKEN: ${{ secrets.NPM_SECRET }}
