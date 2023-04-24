@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/mauriciolauffer/openui5-ratingshroom/compare/v1.0.1...v1.0.2) (2023-04-24)
+
+
+### Bug Fixes
+
+* just testing release-please ([d6048c8](https://github.com/mauriciolauffer/openui5-ratingshroom/commit/d6048c8ddb28d34e1a39b4f3426a32c1d828615a))
+
 ## [1.0.1](https://github.com/mauriciolauffer/openui5-ratingshroom/compare/v1.0.0...v1.0.1) (2023-04-21)
 
 
