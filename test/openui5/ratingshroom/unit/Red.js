@@ -1,9 +1,9 @@
+'use strict';
+
 sap.ui.require([
   'openui5/ratingshroom/Red'
 ], function(Red) {
-  'use strict';
-
-  const { test } = QUnit;
+  const {test} = QUnit;
 
   QUnit.module('RatingShroom', function() {
     QUnit.module('constructor', () => {
@@ -12,5 +12,4 @@ sap.ui.require([
       });
     });
   });
-
 });
