@@ -1,9 +1,9 @@
-sap.ui.require([
-  'test/unit/Red',
-  'sap/ui/thirdparty/sinon',
-  'sap/ui/thirdparty/sinon-qunit'
-], function() {
-  'use strict';
+'use strict';
 
-  QUnit.start();
+sap.ui.require([
+  'test/unit/Red'
+  // 'test/unit/TourMemoryLeak',
+  // 'test/unit/TourStepMemoryLeak'
+], function() {
+
 });
