@@ -1,6 +1,6 @@
 'use strict';
 
-sap.ui.require([
+sap.ui.require([ // x1
   'openui5/ratingshroom/Red'
 ], function(Red) {
   const {test} = QUnit;
