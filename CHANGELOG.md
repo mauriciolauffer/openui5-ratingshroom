@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/mauriciolauffer/openui5-ratingshroom/compare/v1.0.5...v1.0.6) (2023-12-03)
+
+
+### Bug Fixes
+
+* CICD 1 ([f4a4423](https://github.com/mauriciolauffer/openui5-ratingshroom/commit/f4a442385f519793db5c326d96d1d62408a81f3f))
+
 ## [1.0.5](https://github.com/mauriciolauffer/openui5-ratingshroom/compare/v1.0.4...v1.0.5) (2023-04-25)
 
 
