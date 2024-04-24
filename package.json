@@ -22,9 +22,8 @@
     "ui5.yaml"
   ],
   "devDependencies": {
-    "@microsoft/eslint-formatter-sarif": "^3.0.0",
-    "eslint": "^8.39.0",
-    "eslint-config-mlauffer-ui5": "^0.3.3",
+    "eslint": "^9.1.1",
+    "eslint-config-mlauffer-ui5": "file:../eslint-config-mlauffer-ui5",
     "karma": "^6.4.2",
     "karma-chrome-launcher": "^3.2.0",
     "karma-coverage": "^2.2.0",
