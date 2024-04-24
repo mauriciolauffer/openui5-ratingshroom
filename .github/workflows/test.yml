@@ -10,5 +10,6 @@ permissions: read-all
 jobs:
   test:
     # uses: mauriciolauffer/.github/workflows/reusable-workflow.yml@main
-    uses: mauriciolauffer/.github/workflow-templates/test.yml@main
+    # uses: mauriciolauffer/.github/workflow-templates/test.yml@main
+    uses: mauriciolauffer/.github/workflows/test.yml@main
 
