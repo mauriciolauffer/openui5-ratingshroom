@@ -1,4 +1,4 @@
-name: test
+name: test-x0
 
 on:
   push:
@@ -8,13 +8,9 @@ on:
 permissions: read-all
 
 jobs:
-  test-reuse-x1:
+  test-reuse-x0:
     permissions:
       security-events: write
     # uses: mauriciolauffer/.github/workflows/reusable-workflow.yml@main
     # uses: mauriciolauffer/.github/workflow-templates/test.yml@main
     uses: mauriciolauffer/.github/workflows/test.yml@main
-  test-reuse-x2:
-    permissions:
-      security-events: write
-    uses: mauriciolauffer/.github/.github/workflows/test.yml@main
