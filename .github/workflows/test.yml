@@ -8,9 +8,13 @@ on:
 permissions: read-all
 
 jobs:
-  test-reuse:
+  test-reuse-x1:
+    permissions:
+      security-events: write
     # uses: mauriciolauffer/.github/workflows/reusable-workflow.yml@main
     # uses: mauriciolauffer/.github/workflow-templates/test.yml@main
-    # uses: mauriciolauffer/.github/workflows/test.yml@main
+    uses: mauriciolauffer/.github/workflows/test.yml@main
+  test-reuse-x2:
+    permissions:
+      security-events: write
     uses: mauriciolauffer/.github/.github/workflows/test.yml@main
-
