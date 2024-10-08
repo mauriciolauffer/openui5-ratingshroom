@@ -1,0 +1,16 @@
+name: test-x1
+
+# x2
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+
+permissions: read-all
+
+jobs:
+  test-reuse-x1:
+    permissions:
+      security-events: write
+    uses: mauriciolauffer/.github/.github/workflows/test.yml@main

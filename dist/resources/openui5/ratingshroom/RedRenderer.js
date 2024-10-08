@@ -1,1 +1,0 @@
-sap.ui.define(["sap/m/RatingIndicatorRenderer"],function(e){"use strict";return e});
