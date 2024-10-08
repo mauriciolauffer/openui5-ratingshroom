@@ -3,25 +3,11 @@ on:
   push:
     branches: [master]
 
-permissions:
-  contents: write
-  pull-requests: write
-
 jobs:
   release:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: GoogleCloudPlatform/release-please-action@v3
-        with:
-          token: ${{ secrets.GH_PAT }}
-          release-type: node
-          package-name: openui5-ratingshroom
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 20
-          registry-url: https://registry.npmjs.org
-          cache: npm
-      - run: npm publish --tag beta --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_SECRET }}
+    permissions:
+      contents: write
+      pull-requests: write
+    uses: mauriciolauffer/.github/.github/workflows/release.yml@main
+    secrets:
+      GITHUB_PAT: ${{ secrets.GH_PAT }}
