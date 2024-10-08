@@ -18,4 +18,6 @@ jobs:
       # Used to receive a badge. (Upcoming feature)
       id-token: write
     uses: mauriciolauffer/.github/.github/workflows/scorecards-analysis.yml@main
+    secrets:
+      envPAT: ${{ secrets.SCORECARD_READ_TOKEN }}
     
