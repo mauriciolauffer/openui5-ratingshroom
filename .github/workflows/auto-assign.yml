@@ -10,8 +10,4 @@ permissions: read-all
 
 jobs:
   auto-assign:
-    runs-on: ubuntu-latest
-    permissions:
-      issues: write
-    steps:
-      - uses: mauriciolauffer/.github/.github/workflows/auto-assign.yml@main
+    uses: mauriciolauffer/.github/.github/workflows/auto-assign.yml@main
