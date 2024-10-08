@@ -10,4 +10,6 @@ permissions: read-all
 
 jobs:
   auto-assign:
+    permissions:
+      issues: write
     uses: mauriciolauffer/.github/.github/workflows/auto-assign.yml@main
