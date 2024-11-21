@@ -1,0 +1,14 @@
+name: test-x0
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+
+permissions: read-all
+
+jobs:
+  ctms:
+    # uses: mauriciolauffer/.github/workflows/reusable-workflow.yml@main
+    # uses: mauriciolauffer/.github/workflow-templates/test.yml@main
+    uses: mauriciolauffer/ctms/action.yml@main
